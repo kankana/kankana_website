@@ -1,0 +1,58 @@
+# 9 Fundamentals of modern AI
+
+<div class="callout">
+    <p>A Leadership Blueprint for AI Core Drivers</p>
+</div>
+
+If you are building an AI-driven organization, you aren't just integrating an API; you are architecting a non-deterministic system. 
+I recently revisited a masterclass on the nine core concepts driving modern AI. If you are leading an engineering org, these aren't just buzzwords—they are the levers you pull to manage latency, cost, and reliability.
+
+Here is my breakdown of these fundamentals
+
+## 1. Tokenization
+Before a model "thinks," it "tokenizes." As engineers, we care about this because Tokenization determines our context window limits and billing. Most systems use Byte Pair Encoding (BPE), which breaks text (walking) into common fragments (like "walk" + "ing") rather than raw characters.
+From a leadership perspective, this isn't just a pre-processing step—it’s a cost and latency lever. The efficiency of your tokenizer determines your context window consumption and your monthly compute bill.
+
+## 2. Text Decoding Algorithms
+How a model chooses its next word is a balance of creativity vs. determinism.
+
+- Greedy Decoding: Always picks the most likely token. Great for coding or math.
+- Top P Sampling: Adds "controlled randomness". Essential for marketing copy or creative bots.
+
+For customer-facing interfaces where "robotic" repetition is a churn risk, we implement Top P Sampling to introduce controlled variety. Choosing the right decoding strategy is a balance between reliability and user experience.
+
+## 3. Prompt Engineering
+I view prompt engineering as the new configuration layer. 
+- Few-shot prompting: Giving the model 3-5 examples to ground its style.
+- Chain of Thought (CoT): Forcing the model to "show its work" to improve logic 
+If you can't see the model's logic, you can't debug its failures.
+
+## 4. Multi-Step Agents
+The most significant shift in our 2026 roadmap is the move toward orchestration of Agents. A standalone LLM only generates text; an Agent executes actions. 
+An agent isn't just a text generator, it’s a loop. It plans, calls tools (like our internal DBs or web search), and evaluates its own progress. This moves our AI from a "search bar" to a "colleague."
+
+## 2. RAG Architecture
+We cannot rely on a model's weights for proprietary data. Retrieval Augmented Generation (RAG) is our primary defense against hallucinations. 
+RAG connects the model to a knowledge store (like a PDF library or database). The retriever pulls relevant facts, and the LLM uses them to generate answers(citing actual documents to reduce hallucination).
+## 6. RLHF
+How do we ensure these models follow our safety and brand guidelines? Reinforcement Learning from Human Feedback (RLHF). 
+Use a reward model that learns from human preferences to nudge the LLM toward responses that are helpful and safe. This is the final tuning stage that turns a raw, stochastic model into a professional corporate representative.
+
+## 7. The Generative Engine: VAEs & Diffusion
+If your team is working on media generation, you need to understand the engines. 
+- VAEs (Variational Autoencoders): They act as "latent compressors," making large data sets easier for models to handle.
+- Diffusion Models: These generate data by "reversing noise". They start with static and iteratively "clean" it into an image or video.
+
+## 8. LoRA
+We cannot afford to fine-tune 70B parameter models from scratch every month. 
+Low-Rank Adaptation (LoRA) is our primary tool for efficiency. 
+By freezing the base model and only training a tiny "adapter" layer. It's 10x cheaper and incredibly fast for domain-specific tasks. 
+LoRA is how we make specialized AI economically viable.
+
+## 9. Future-Proofing the Stack
+As the underlying models change every few weeks, your infrastructure is what survives. 
+Master these nine fundamentals, and you build a platform that is agnostic to the model of the day.
+
+<div class="callout">
+    <p>My advice: Avoid obsessing over the model names and start obsessing over the agentic pipelines. The reliability is in the architecture.</p>
+</div>
