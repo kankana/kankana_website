@@ -1,0 +1,71 @@
+# Why My Job as Director of Engineering Just Got Harder
+
+For years, the dream of every Engineering Director was to move at speed with quality. We obsessed over developer velocity and reducing friction. Now, with AI assistants integrated into every IDE, we’ve finally achieved that dev speed—and it’s breaking everything else.
+
+Based on recent technological shifts and the evolving landscape of 2026, I’ve realized that my role is no longer about managing code volume; it’s about managing **process debt** and **cognitive load**. Here is how I’m rethinking leadership in the age of AI.
+
+
+
+## 1. Slight Bottleneck still exists
+
+We used to worry about how long it took a developer to write a feature. Now, AI can generate that feature in seconds. However, our guardrail loop -> security reviews, compliance checks, and UAT wasn't built for this level of throughput.
+
+I had to stop optimizing the coding phase and start fixing the quality process bottlenecks. If a developer can write code 10x faster but the security team still takes two days to review a PR, we end up in a pileup. We can still improve our time-to-market if we **shift left the guardrails**.
+
+One of the most counterintuitive things I’ve seen lately is teams removing automated checks because they fear that AI-generated hallucinations will bypass old guardrails. So, it seems we are shifting the burden of basic quality check, back to humans. In fact, some of my staff engineers/ architects are more exhausted than ever because they have to verify every line of the black box code. 
+
+**Trust is the new currency.** Without it, the speed of AI is an illusion.
+
+
+
+## 2. Use AI when you are ready to delegate
+
+There is a common misconception that AI helps developers stay in "the flow state". In reality, it can be quite interruptive. When an AI suggests code before you’ve even finished your thought, it forces you to stop creating and start reviewing.
+
+If a developer has to rebuild their mental model 20 times an hour because the AI is feeding them rapid-fire suggestions, they hit **mental fatigue**.
+
+
+
+## 3. Deal with Yes-man syndrome
+
+AI agents are chronic people pleasers. A human peer will tell you, "Hey, this architecture won't scale for our Black Friday traffic," but an AI agent will just say, "Sure, I’ll write that for you."
+
+This places a **Cognitive Load** on our engineers by killing the deep work. They are trying to manage the edge cases and seem to be underconfident on architectural strengths to withstand reliability threats.
+
+
+
+## 3. The SPACE Framework
+
+The old metrics like lines of code or number of PRs created, are officially dead. If AI can write 5K lines of code in a minute, those metrics create noise, not value. To get a true pulse on my organization, I’ve shifted to the **SPACE framework**.
+
+The SPACE Framework was developed by researchers at GitHub and Microsoft to provide a holistic, multidimensional view of what "productive" actually looks like in a modern engineering org.
+
+| Dimension | What it Measures | Why it Matters in 2026 |
+| :--- | :--- | :--- |
+| **Satisfaction** | How fulfilled and healthy developers feel. | High velocity with low satisfaction leads to burnout |
+| **Performance** | The outcome of the work (e.g., quality, reliability, customer impact). | AI can write code fast, but is that code actually performant? |
+| **Activity** | The count of actions (PRs, commits, documentation). | Easy to track, but should never be used in isolation as a success metric. |
+| **Collaboration** | How well teams share knowledge. | In an AI-driven world, common sense and peer review are critical. |
+| **Efficiency** | The ability to complete work with minimal interruptions or friction. | Measures if the deployment pipeline and security are bottleneck or not |
+
+<div class="callout">
+I have already moved away from just measuring "AI adoption" and started implementing Guardrails around the flow state.
+</div>
+
+## 4. Permission to Fail 
+
+Change management in the AI era can’t just be a memo from the C-suite. It requires a top-down and bottom-up approach.
+
+I provided **explicit permission** for my teams to slow down, change gears, so that they can learn how to speed up. We’ve created "safe spaces" for experimentation where teams can try new AI agents without the pressure of a looming deadline.
+
+* **Pre-requisite:** Humans should create enough context in form of documentation, skills, so that AI can generate appropriately.
+* **Ownership:** A developer who feels they own the outcome, will be more critical of AI output than one who is just trying to hit a quota.
+* **Audit Human-in-Loop areas:** Identify where the human-in-the-loop processes are becoming overwhelmed by AI-generated volume.
+
+
+
+## My advice?
+
+AI is a force multiplier, but if you multiply a chaotic process, you just get **faster chaos**. My job is no longer to ensure teams are writing reliable code; it’s to ensure that our people have the mental clarity and the structural support to turn a code into actual value.
+
+Speed is a byproduct of a healthy system, not a metric to be chased. My advice? **Don't just give your team the fastest Ferrari car—make sure the brakes work and the road is smoothly paved.**
